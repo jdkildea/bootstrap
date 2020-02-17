@@ -1,0 +1,271 @@
+
+body {
+    font-family: eurostile, sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    font-weight: 700;
+    position: fixed !important;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 75px;
+}
+
+.noheadbutt::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -100px; 
+    height: 100px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+p {
+    font-weight: 400;
+}
+
+.nav-link-transition {
+    transition-duration: .15s;
+}
+
+.nav-link-transition:hover {
+    color: rgba(0, 0, 0, 1) !important;
+    transition-duration:  .3s;
+}
+
+.carousel-inner {
+    max-height: 700px;
+}
+
+.verticalcenter {
+    line-height: 700px;
+}
+
+.verticalcenter img{
+    vertical-align: middle;
+}
+
+.secondary-jumbotron {
+    height: 400px;
+}
+
+.cardrow {
+    padding: 0;
+    margin: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    height: auto;
+    max-width: 100%;
+    position: static;
+}
+
+.mycard {
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+}
+
+a .mycard .hiddentext {
+    text-decoration: none !important;
+    color: #000;
+}
+
+.hiddentext {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .5);
+    position: relative;
+    transition: opacity .4s, transform 0s;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0
+}
+
+.mycard:hover .hiddentext {
+    opacity: 1; 
+}
+
+.mycard:hover {
+    box-shadow: 5px 5px 30px #aaa;
+    transform: scale(1.03); 
+}
+
+.nopadding {
+    padding: 0px;
+}
+
+.textbottom {
+    position: absolute;
+    bottom: 0;
+    padding: 1.25rem;
+    width: 100%;
+}
+
+.texttop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.automargin {
+    margin: 0px auto;
+}
+
+.img-in-text {
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+
+#card1container {
+    padding: 30px 15px 15px 30px !important;
+    
+}
+
+#card1 {
+    background-image: url(../images/milkshakes.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: right bottom;
+    background-color: #0088CE;
+    transition: ease all .4s;
+    position: relative;
+    display: flex;
+}
+
+#block2text {
+    text-align: right;
+}
+
+#block4text {
+    text-align: right;
+}
+
+#card2container {
+    padding: 30px 30px 15px 15px !important;
+}
+
+#card2 {
+    background-image: url(../images/tray.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: left bottom;
+    background-color: #000;
+    transition: ease all .4s;
+    position: relative;
+    display: flex;
+}
+
+#card3container {
+    padding: 15px 15px 30px 30px !important;
+}
+
+#card3 {
+    background-image: url(../images/apron.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: right top;
+    background-color: #ff0000;
+    transition: ease all .4s;
+    position: relative;
+    display: flex;
+}
+
+#card4container {
+    padding: 15px 30px 30px 15px !important;
+}
+
+#card4 {
+    background-image: url(../images/booth.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: left top;
+    background-color: #ffff00;
+    transition: ease all .4s;
+    position: relative;
+    display: flex;
+}
+@media only screen and (max-width: 990px) {
+    #card1container, #card2container, #card3container, #card4container {
+        padding: 15px !important;
+    }
+}
+
+.containerodd {
+    background-color: #eee;
+    min-height: 400px;
+    padding: 30px;
+    clear: both;
+}
+
+.containerodd h1 {
+    font-size: 50px;
+}
+
+
+.containereven {
+    background-color: #fff;
+    min-height: 400px;
+    padding: 30px;
+    clear: both;
+}
+
+.containereven h1 {
+    font-size: 50px;
+}
+
+.disclaimer {
+    background-color: #FF3131;
+    height: 150px;
+    font: 30px eurostile, sans-serif;
+}
+
+.disclaimer p {
+    line-height: 150px;
+    margin: 0px;
+}
+
+.disclaimer a {
+    text-decoration: underline !important;
+    transition: ease .2s;
+}
+
+.disclaimer a:hover {
+    color: #ff0;
+    transition: ease .2s;
+}
+
+#footer {
+    background-color: #ccc;
+    height: 75px;
+    padding: 20px
+}
+
+.fixed-width {
+    width: ;
+}
+
+#footer a {
+    opacity: .75;
+    transition: ease .2s;
+}
+
+#footer a:hover {
+    opacity: 1;
+    transition: ease .2s;
+}
